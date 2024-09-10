@@ -10,7 +10,7 @@
 
 // 1. Include the database connection
 require_once '../db.php';
-$conn = connectMySQLi(); // or use connectPDO() if preferred
+$conn = connectDB(); // or use connectPDO() if preferred
 
 //code starts here
 
