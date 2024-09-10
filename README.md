@@ -1,1 +1,1 @@
-# open the master branch for more details
+# open the master branch to proceed
