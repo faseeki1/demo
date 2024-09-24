@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2024 at 04:04 PM
+-- Generation Time: Sep 24, 2024 at 05:07 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -84,11 +84,20 @@ INSERT INTO `songs` (`id`, `title`, `description`, `author`, `category_id`, `cre
 
 CREATE TABLE `users` (
   `id` int(200) NOT NULL,
-  `name` varchar(100)) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
   `email` varchar(200) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL,
   `created_at` timestamp(6) NOT NULL DEFAULT current_timestamp(6)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`) VALUES
+(3, 'swanky', 'swanky2@gmail.com', '123456', '2024-09-10 19:12:07.806328'),
+(5, 'swanky', 'swanky2@gmail.com1', '123456', '2024-09-10 19:12:46.004901'),
+(6, 'swanky', 'swanky2@gmail.com13', '123456', '2024-09-10 19:12:50.356168');
 
 --
 -- Indexes for dumped tables
@@ -133,7 +142,7 @@ ALTER TABLE `songs`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
