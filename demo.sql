@@ -84,7 +84,7 @@ INSERT INTO `songs` (`id`, `title`, `description`, `author`, `category_id`, `cre
 
 CREATE TABLE `users` (
   `id` int(200) NOT NULL,
-  `name` int(255) DEFAULT NULL,
+  `name` varchar(100)) DEFAULT NULL,
   `email` varchar(200) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL,
   `created_at` timestamp(6) NOT NULL DEFAULT current_timestamp(6)
